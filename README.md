@@ -1,6 +1,6 @@
 ## weather-agent
 
-This is a minimal sample that uses the OpenAI Responses client (`agent_framework.openai.OpenAIResponsesClient`). You can run it with `uv`.
+This is a minimal sample that uses the OpenAI Responses client (`agent_framework.openai.OpenAIResponsesClient`). It is a demo Agent application built with the Microsoft Agent Framework. You can run it with `uv`.
 
 ### Prerequisites
 - Python 3.10+

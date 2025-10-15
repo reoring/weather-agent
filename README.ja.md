@@ -1,6 +1,6 @@
 ## weather-agent
 
-OpenAI Responses クライアント（`agent_framework.openai.OpenAIResponsesClient`）を使った最小サンプルです。`uv` で実行できます。
+OpenAI Responses クライアント（`agent_framework.openai.OpenAIResponsesClient`）を使った最小サンプルです。これは Microsoft Agent Framework で作成したデモ用の Agent アプリケーションです。`uv` で実行できます。
 
 ### 前提
 - Python 3.10+
