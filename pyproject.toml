@@ -12,14 +12,14 @@ dependencies = [
 
 [tool.uv]
 package = true
-dev-dependencies = ["ruff>=0.6.0", "poethepoet>=0.25"]
+
 
 [project.scripts]
 weather-agent = "weather_agent.main:main_entry"
 
 
-[tool.uv.sources]
-agent-framework-core = { path = "/home/reoring/dev/codroid/refs/agent-framework/python/packages/core", editable = true }
+[dependency-groups]
+dev = ["ruff==0.6.0", "poethepoet>=0.25", "pre-commit>=3.7,<4"]
 
 [tool.pyright]
 venvPath = "."
@@ -50,3 +50,9 @@ shell = "ruff format ${PY_SRCS:-.}"
 
 [tool.poe.tasks.fix]
 shell = "ruff check ${PY_SRCS:-.} --fix && ruff format ${PY_SRCS:-.}"
+
+[tool.poe.tasks.precommit-install]
+shell = "pre-commit install"
+
+[tool.poe.tasks.precommit]
+shell = "pre-commit run --all-files"

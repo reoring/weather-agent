@@ -24,8 +24,7 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Sync dependencies
-        run: uv sync
+        run: uv sync --group dev
 
       - name: Lint
         run: uv run poe lint
-
